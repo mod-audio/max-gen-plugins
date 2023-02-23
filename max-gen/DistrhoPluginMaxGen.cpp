@@ -105,3 +105,21 @@ Plugin* createPlugin()
 END_NAMESPACE_DISTRHO
 
 #include "gen_dsp/genlib.cpp"
+
+// --------------------------------------------------------------------------------------------------------------------
+// fix debug build, a few calls are never defined
+
+size_t genlib_getstatesize(CommonState*, getparameter_method)
+{
+    return 0;
+}
+
+short genlib_getstate(CommonState*, char*, getparameter_method)
+{
+    return 0;
+}
+
+short genlib_setstate(CommonState*, const char*, setparameter_method)
+{
+    return 0;
+}
