@@ -1,15 +1,15 @@
 max-gen-plugins
 ===============
 
-Collection of MAX Gen~ based audio plugins used in MOD Audio.  
+Collection of MAX gen~ based audio plugins used in MOD Audio.  
 Stored in a single source code repository to make it easy for contributors and MOD staff to add and maintain these plugins.
 
 This source code repository has the following contents:
 
-- dpf (the plugin framework used to get CLAP, LV2, VST2, VST3 formats from a single implementation; for MOD we only care about the LV2 format for now)
-- max-gen (custom code that integrates the Gen~ exported code in DPF)
-- plugins (Gen~ exported plugins, each including the exported code plus a custom `DistrhoPluginInfo.h` for plugin meta-data and a README supplied by the author)
-- presets (optional, LV2 presets to be included on the MOD plugin store builds of each plugin)
+- **dpf** - the plugin framework used to get CLAP, LV2, VST2, VST3 formats from a single implementation; for MOD we only care about the LV2 format for now
+- **max-gen** - custom code that integrates the gen~ exported code in DPF
+- **plugins** - gen~ exported plugins, each including the exported code plus a custom `DistrhoPluginInfo.h` for plugin meta-data and a README supplied by the author
+- **presets** - optional, LV2 presets to be included on the MOD plugin store builds of each plugin
 
 ### BUILDING
 
