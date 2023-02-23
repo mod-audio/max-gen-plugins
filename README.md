@@ -6,7 +6,8 @@ Stored in a single source code repository to make it easy for contributors and M
 
 This source code repository has the following contents:
 
-- **dpf** - the plugin framework used to get CLAP, LV2, VST2, VST3 formats from a single implementation; for MOD we only care about the LV2 format for now
+- **dpf** - the plugin framework used to get CLAP, LV2, VST2, VST3 formats from a single implementation;  
+for MOD we only care about the LV2 format for now
 - **max-gen** - custom code that integrates the gen~ exported code in DPF
 - **plugins** - gen~ exported plugins, each including the exported code plus a custom `DistrhoPluginInfo.h` for plugin meta-data and a README supplied by the author
 - **presets** - optional, LV2 presets to be included on the MOD plugin store builds of each plugin
@@ -19,7 +20,7 @@ Building is a simple as running `make` after cloning this repository, assuming y
 Note that this repository uses git submodules, so cloning with `git clone --recursive` is required.
 
 After building you will find CLAP, LV2, VST2 and VST3 plugin builds in a newly created `./bin` directory.  
-Alternatively you can download nightly builds from the [generated GitHub actions](https://github.com/moddevices/max-gen-plugins/actions/build).
+Alternatively you can download nightly builds from the [generated GitHub actions](https://github.com/moddevices/max-gen-plugins/actions/workflows/build.yml).
 
 #### BUILDING FOR MOD
 
