@@ -33,6 +33,11 @@
 #define DISTRHO_PLUGIN_UNIQUE_ID d_cconst('z', 'w', 'm', 'z')
 #define DISTRHO_PLUGIN_VERSION d_version(0, 0, 0)
 
+// TODO have a way to specify properties
+// "loop" "trigger"
+// lv2:portProperty lv2:integer, lv2:toggled, mod:preferMomentaryOnByDefault ;
+// lv2:portProperty lv2:integer, lv2:toggled, mod:preferMomentaryOnByDefault  ;
+
 static constexpr const char DISTRHO_PLUGIN_DESCRIPTION[] = R"DESCRIPTION(
 Build with Max gen~ by Zwabo
 
