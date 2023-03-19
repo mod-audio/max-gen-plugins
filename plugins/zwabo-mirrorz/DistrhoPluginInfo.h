@@ -26,25 +26,9 @@
 #define DISTRHO_PLUGIN_NUM_INPUTS    2
 #define DISTRHO_PLUGIN_NUM_OUTPUTS   2
 
-#define DISTRHO_PLUGIN_CLAP_FEATURES   "audio-effect", "distortion", "stereo"
+#define DISTRHO_PLUGIN_CLAP_FEATURES   "audio-effect", "delay", "stereo"
 #define DISTRHO_PLUGIN_LV2_CATEGORY    "lv2:DelayPlugin"
-#define DISTRHO_PLUGIN_VST3_CATEGORIES "Fx|Distortion"
+#define DISTRHO_PLUGIN_VST3_CATEGORIES "Fx|Delay"
 
 #define DISTRHO_PLUGIN_UNIQUE_ID d_cconst('z', 'w', 'm', 'z')
 #define DISTRHO_PLUGIN_VERSION d_version(0, 0, 0)
-
-// TODO have a way to specify properties
-// "loop" "trigger"
-// lv2:portProperty lv2:integer, lv2:toggled, mod:preferMomentaryOnByDefault ;
-// lv2:portProperty lv2:integer, lv2:toggled, mod:preferMomentaryOnByDefault  ;
-
-static constexpr const char DISTRHO_PLUGIN_DESCRIPTION[] = R"DESCRIPTION(
-Build with Max gen~ by Zwabo
-
-The TRIGGER function of MIRRORZ allows you to play backward the last chords/melody you just played, same for the LOOP function but looped.
-Pressing TRIGGER (momentary ON ) start reading audio backward from the last sampled position within the data/buffer, releasing TRIGGER stop reading audio.
-
-Pressing LOOP (momentary ON ) reads audio backward from the last sampled position within the data/buffer, releasing "LOOP" loop the buffer segment just read.
-
-Pressing TRIGGER stop the loop (if you keep TRIGGER pressed, it reads audio backward from the last sampled position within the data/buffer)
-)DESCRIPTION";

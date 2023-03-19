@@ -68,6 +68,8 @@ void DistrhoPluginMaxGen::initParameter(const uint32_t index, Parameter& paramet
     parameter.ranges.def = info.defaultvalue;
     parameter.ranges.min = info.outputmin;
     parameter.ranges.max = info.outputmax;
+
+    parameter.symbol.toBasic();
 }
 
 // --------------------------------------------------------------------------------------------------------------------

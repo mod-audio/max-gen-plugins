@@ -11,6 +11,8 @@ include dpf/Makefile.base.mk
 
 PLUGINS = $(subst plugins/,,$(wildcard plugins/*))
 
+CUSTOM_TTL = $(subst custom-ttl/,,$(wildcard custom-ttl/*))
+
 # ---------------------------------------------------------------------------------------------------------------------
 # build rules
 
@@ -19,14 +21,17 @@ all: plugins gen
 plugins:
 	$(foreach p,$(PLUGINS),$(MAKE) all -f max-gen/Makefile.common.mk NAME=${p})
 
+gen: plugins pregen
+	$(foreach p,$(CUSTOM_TTL),cp custom-ttl/${p}/*.ttl bin/${p}.lv2/)
+
 ifneq ($(CROSS_COMPILING),true)
-gen: plugins dpf/utils/lv2_ttl_generator
+pregen: plugins dpf/utils/lv2_ttl_generator
 	@$(CURDIR)/dpf/utils/generate-ttl.sh
 
 dpf/utils/lv2_ttl_generator:
 	$(MAKE) -C dpf/utils/lv2-ttl-generator
 else
-gen:
+pregen:
 endif
 
 # ---------------------------------------------------------------------------------------------------------------------

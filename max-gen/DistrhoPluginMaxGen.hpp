@@ -40,7 +40,7 @@ protected:
 
     const char* getDescription() const noexcept override
     {
-        return DISTRHO_PLUGIN_DESCRIPTION;
+        return "Generated from Max gen~ and github.com/moddevices/max-gen-plugins";
     }
 
     int64_t getUniqueId() const noexcept override
