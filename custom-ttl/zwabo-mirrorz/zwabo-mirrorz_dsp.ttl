@@ -61,7 +61,7 @@
     ] ;
 
     lv2:port [
-        a lv2:InputPort, lv2:ControlPort ;
+        a lv2:OutputPort, lv2:ControlPort ;
         lv2:index 4 ;
         lv2:name "BILL" ;
         lv2:symbol "BILL" ;
@@ -70,7 +70,7 @@
         lv2:maximum 1 ;
     ] ,
     [
-        a lv2:InputPort, lv2:ControlPort ;
+        a lv2:OutputPort, lv2:ControlPort ;
         lv2:index 5 ;
         lv2:name "BOUL" ;
         lv2:symbol "BOUL" ;
