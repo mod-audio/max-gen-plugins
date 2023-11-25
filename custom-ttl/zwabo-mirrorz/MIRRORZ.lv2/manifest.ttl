@@ -1,0 +1,24 @@
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+
+<urn:maxgen:MIRRORZ>
+
+    a lv2:Plugin ;
+
+    lv2:binary <MIRRORZ_dsp.so> ;
+
+    rdfs:seeAlso <MIRRORZ_dsp.ttl> .
+
+
+
+
+
+
+<urn:maxgen:MIRRORZ> <http://moddevices.com/ns/mod#releaseNumber> 0 .
+<urn:maxgen:MIRRORZ> <http://moddevices.com/ns/mod#builderVersion> 1 .
+<urn:maxgen:MIRRORZ> <http://moddevices.com/ns/mod#buildId> 1334 .
+<urn:maxgen:MIRRORZ> <http://moddevices.com/ns/mod#buildEnvironment> "maxgen" .
+<urn:maxgen:MIRRORZ> rdfs:seeAlso <modgui.ttl> .
