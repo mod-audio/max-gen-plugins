@@ -1,0 +1,45 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<https://github.com/zwaba/COZMIC>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-cozmic.html> ;
+        modgui:stylesheet <modgui/stylesheet-cozmic.css> ;
+        modgui:screenshot <modgui/screenshot-cozmic.png> ;
+        modgui:thumbnail <modgui/thumbnail-cozmic.png> ;
+        modgui:brand "zwabo" ;
+        modgui:label "COZMIC" ;
+        modgui:model "lata" ;
+        modgui:panel "7-knobs" ;
+        modgui:color "star" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "mix" ;
+            lv2:name "mix" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "time" ;
+            lv2:name "time" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "feedback" ;
+            lv2:name "feedback" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "crossfeed" ;
+            lv2:name "crossfeed" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "speed" ;
+            lv2:name "speed" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "Filter" ;
+            lv2:name "Filter" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "double" ;
+            lv2:name "double" ;
+        ] ;
+    ] .
