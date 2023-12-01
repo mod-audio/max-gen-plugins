@@ -1,0 +1,21 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<https://github.com/zwaba/Zinvert_phase>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-zinvertphase.html> ;
+        modgui:stylesheet <modgui/stylesheet-zinvertphase.css> ;
+        modgui:screenshot <modgui/screenshot-zinvertphase.png> ;
+        modgui:thumbnail <modgui/thumbnail-zinvertphase.png> ;
+        modgui:brand "Zwabo" ;
+        modgui:label "Zinvert_phase" ;
+        modgui:model "boxy-small" ;
+        modgui:panel "1-footswitch" ;
+        modgui:color "cream" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "INVERT" ;
+            lv2:name "INVERT" ;
+        ] ;
+    ] .
