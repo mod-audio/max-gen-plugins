@@ -1,0 +1,22 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<https://github.com/zwaba/Xfade1to2st>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-xfade1to2st.html> ;
+        modgui:stylesheet <modgui/stylesheet-xfade1to2st.css> ;
+        modgui:screenshot <modgui/screenshot-xfade1to2st.png> ;
+        modgui:thumbnail <modgui/thumbnail-xfade1to2st.png> ;
+        modgui:brand "zwabo" ;
+        modgui:label "Xfade1to2st" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-knob" ;
+        modgui:color "gold" ;
+        modgui:knob "bronze" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "MIX" ;
+            lv2:name "MIX" ;
+        ] ;
+    ] .
