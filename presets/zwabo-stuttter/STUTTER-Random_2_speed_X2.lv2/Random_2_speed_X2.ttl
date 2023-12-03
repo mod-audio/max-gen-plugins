@@ -1,0 +1,53 @@
+@prefix atom: <http://lv2plug.in/ns/ext/atom#> .
+@prefix lv2: <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix state: <http://lv2plug.in/ns/ext/state#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+	a pset:Preset ;
+	lv2:appliesTo <https://github.com/zwaba/STUTTER> ;
+	rdfs:label "Random 2 speed X2" ;
+	lv2:port [
+		lv2:symbol "BPM" ;
+		pset:value 124.35267639
+	] , [
+		lv2:symbol "DOUBLE" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "Div_L" ;
+		pset:value 8.0
+	] , [
+		lv2:symbol "Div_R" ;
+		pset:value 10.0
+	] , [
+		lv2:symbol "ENV_ms" ;
+		pset:value 297.99105835
+	] , [
+		lv2:symbol "Filter_R" ;
+		pset:value 30.8035717
+	] , [
+		lv2:symbol "RANDOM" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "RANGE" ;
+		pset:value 5.0
+	] , [
+		lv2:symbol "Tail" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "dry_wet" ;
+		pset:value 1.0
+	] , [
+		lv2:symbol "reverse" ;
+		pset:value 0.0
+	] , [
+		lv2:symbol "speed" ;
+		pset:value 2.0
+	] , [
+		lv2:symbol "ztutter" ;
+		pset:value 0.0
+	] .
+
