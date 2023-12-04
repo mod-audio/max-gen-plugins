@@ -26,9 +26,9 @@
 #define DISTRHO_PLUGIN_NUM_INPUTS    2
 #define DISTRHO_PLUGIN_NUM_OUTPUTS   2
 
-#define DISTRHO_PLUGIN_CLAP_FEATURES   "audio-effect", "delay", "stereo"
-#define DISTRHO_PLUGIN_LV2_CATEGORY    "lv2:DelayPlugin"
-#define DISTRHO_PLUGIN_VST3_CATEGORIES "Fx|Delay"
+#define DISTRHO_PLUGIN_CLAP_FEATURES   "audio-effect", "routing", "mono"
+#define DISTRHO_PLUGIN_LV2_CATEGORY    "lv2:UtilityPlugin"
+#define DISTRHO_PLUGIN_VST3_CATEGORIES "Fx|Utility"
 
 #define DISTRHO_PLUGIN_UNIQUE_ID d_cconst('z', 'w', 'm', 'z')
 #define DISTRHO_PLUGIN_VERSION d_version(0, 0, 0)
