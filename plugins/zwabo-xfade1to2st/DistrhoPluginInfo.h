@@ -26,7 +26,7 @@
 #define DISTRHO_PLUGIN_NUM_INPUTS    2
 #define DISTRHO_PLUGIN_NUM_OUTPUTS   2
 
-#define DISTRHO_PLUGIN_CLAP_FEATURES   "audio-effect", "routing", "stereo"
+#define DISTRHO_PLUGIN_CLAP_FEATURES   "audio-effect", "routing", "mono"
 #define DISTRHO_PLUGIN_LV2_CATEGORY    "lv2:UtilityPlugin"
 #define DISTRHO_PLUGIN_VST3_CATEGORIES "Fx|Utility"
 
