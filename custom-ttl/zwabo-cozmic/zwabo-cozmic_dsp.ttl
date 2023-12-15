@@ -10,7 +10,7 @@
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix spdx:  <http://spdx.org/rdf/terms#> .
 @prefix unit:  <http://lv2plug.in/ns/extensions/units#> .
-@prefix time: <http://lv2plug.in/ns/ext/time#> .
+@prefix time:  <http://lv2plug.in/ns/ext/time#> .
 
 <urn:maxgen:zwabo:cozmic>
     a lv2:DelayPlugin, lv2:Plugin, doap:Project ;
