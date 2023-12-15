@@ -93,7 +93,6 @@
         lv2:scalePoint [rdfs:label "7tuplet"; rdf:value 8];
         lv2:scalePoint [rdfs:label "9tuplet"; rdf:value 9];
         lv2:scalePoint [rdfs:label "11tuplet"; rdf:value 10];
-
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
@@ -114,7 +113,6 @@
         lv2:scalePoint [rdfs:label "7tuplet"; rdf:value 8];
         lv2:scalePoint [rdfs:label "9tuplet"; rdf:value 9];
         lv2:scalePoint [rdfs:label "11tuplet"; rdf:value 10];
-
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
