@@ -19,10 +19,10 @@ CUSTOM_TTL = $(subst custom-ttl/,,$(wildcard custom-ttl/*))
 all: plugins gen
 
 plugins:
-	$(foreach p,$(PLUGINS),$(MAKE) all -f max-gen/Makefile.common.mk NAME=${p})
+	$(foreach p,$(PLUGINS),$(MAKE) all -f max-gen/Makefile.common.mk NAME=${p};)
 
 gen: plugins pregen
-	$(foreach p,$(CUSTOM_TTL),cp custom-ttl/${p}/*.ttl bin/${p}.lv2/)
+	$(foreach p,$(CUSTOM_TTL),cp custom-ttl/${p}/*.ttl bin/${p}.lv2/;)
 
 ifneq ($(CROSS_COMPILING),true)
 pregen: plugins dpf/utils/lv2_ttl_generator
@@ -38,7 +38,7 @@ endif
 # cleanup
 
 clean:
-	$(foreach p,$(PLUGINS),$(MAKE) clean -f max-gen/Makefile.common.mk NAME=${p})
+	$(foreach p,$(PLUGINS),$(MAKE) clean -f max-gen/Makefile.common.mk NAME=${p};)
 	$(MAKE) clean -C dpf/utils/lv2-ttl-generator
 	rm -rf bin build
 
