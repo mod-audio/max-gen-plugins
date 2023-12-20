@@ -25,6 +25,7 @@
 #define DISTRHO_PLUGIN_IS_RT_SAFE    1
 #define DISTRHO_PLUGIN_NUM_INPUTS    2
 #define DISTRHO_PLUGIN_NUM_OUTPUTS   2
+#define DISTRHO_PLUGIN_USES_MODGUI   0
 
 #define DISTRHO_PLUGIN_CLAP_FEATURES   "audio-effect", "delay", "stereo"
 #define DISTRHO_PLUGIN_LV2_CATEGORY    "lv2:DelayPlugin"
