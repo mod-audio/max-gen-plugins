@@ -1,0 +1,30 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<urn:maxgen:zwabo:mirrorz>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-mirrorz.html> ;
+        modgui:stylesheet <modgui/stylesheet-mirrorz.css> ;
+        modgui:screenshot <modgui/screenshot-mirrorz.png> ;
+        modgui:thumbnail <modgui/thumbnail-mirrorz.png> ;
+        modgui:brand "Zwabo" ;
+        modgui:label "MIRRORZ" ;
+        modgui:model "boxy" ;
+        modgui:panel "3-knobs" ;
+        modgui:color "white" ;
+        modgui:knob "purple" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "dry_wet" ;
+            lv2:name "dry_wet" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "filter" ;
+            lv2:name "filter" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "speed" ;
+            lv2:name "speed" ;
+        ] ;
+    ] .
