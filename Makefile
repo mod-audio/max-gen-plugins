@@ -21,7 +21,7 @@ all: pregen
 	$(foreach p,$(CUSTOM_TTL),cp custom-ttl/${p}/*.ttl bin/${p}.lv2/;)
 	$(foreach p,$(MODGUIS),cp -r custom-ttl/${p}/modgui bin/${p}.lv2/;)
 
-pregen: plugins dpf/utils/lv2_ttl_generator
+pregen: plugins dpf/utils/lv2_ttl_generator$(APP_EXT)
 	@$(CURDIR)/dpf/utils/generate-ttl.sh
 
 plugins: plugins/*/DistrhoPluginInfo.h plugins/*/gen_exported.*
