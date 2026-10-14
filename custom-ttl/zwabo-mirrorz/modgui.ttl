@@ -4,12 +4,13 @@
 <urn:maxgen:zwabo:mirrorz>
     modgui:gui [
         modgui:resourcesDirectory <modgui> ;
-        modgui:iconTemplate <modgui/icon-mirrorz.html> ;
-        modgui:stylesheet <modgui/stylesheet-mirrorz.css> ;
-        modgui:screenshot <modgui/screenshot-mirrorz.png> ;
-        modgui:thumbnail <modgui/thumbnail-mirrorz.png> ;
+        modgui:iconTemplate <modgui/icon-mirrorzz.html> ;
+        modgui:stylesheet <modgui/stylesheet-mirrorzz.css> ;
+        modgui:screenshot <modgui/screenshot-mirrorzz.png> ;
+        modgui:thumbnail <modgui/thumbnail-mirrorzz.png> ;
+        modgui:documentation <modgui/MIRRORZz.pdf> ;
         modgui:brand "Zwabo" ;
-        modgui:label "MIRRORZ" ;
+        modgui:label "MIRRORZz" ;
         modgui:model "boxy" ;
         modgui:panel "3-knobs" ;
         modgui:color "white" ;
@@ -24,7 +25,7 @@
             lv2:name "filter" ;
         ] , [
             lv2:index 2 ;
-            lv2:symbol "speed" ;
-            lv2:name "speed" ;
+            lv2:symbol "RandSpeed" ;
+            lv2:name "RandSpeed" ;
         ] ;
     ] .

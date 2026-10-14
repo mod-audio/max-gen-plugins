@@ -17,7 +17,7 @@
 #pragma once
 
 #define DISTRHO_PLUGIN_BRAND   "zwabo"
-#define DISTRHO_PLUGIN_NAME    "MIRRORZ"
+#define DISTRHO_PLUGIN_NAME    "MIRRORZz"
 #define DISTRHO_PLUGIN_URI     "urn:maxgen:zwabo:mirrorz"
 #define DISTRHO_PLUGIN_CLAP_ID "maxgen.zwabo.mirrorz"
 
@@ -32,4 +32,4 @@
 #define DISTRHO_PLUGIN_VST3_CATEGORIES "Fx|Delay"
 
 #define DISTRHO_PLUGIN_UNIQUE_ID d_cconst('z', 'w', 'm', 'z')
-#define DISTRHO_PLUGIN_VERSION d_version(0, 0, 0)
+#define DISTRHO_PLUGIN_VERSION d_version(0, 3, 0)
