@@ -45,3 +45,6 @@ Contributor log for this repo (see `mod-publishing-ops/CLAUDE.md`, "Contributor 
   the Store's 0.2.0; the copied `manifest.ttl` works), GUI renders as zwabo's screenshot, full control
   sweep + worst case (random speed max, wet, trigger+loop held) with 0 new xruns. DSP cost: Duo
   ~11% (worst ~13%), Duo X within noise. Neither device has a saved board using MIRRORZ.
+- 2026-10-16, Duo X re-test with USB audio mode off (it had been using most of the DSP): empty board
+  ~7.1%, with MIRRORZz ~8.9% (worst case 9.0%), so MIRRORZz costs ~2% on the Duo X. Control sweep +
+  worst case: 0 xruns. GUI correct.
