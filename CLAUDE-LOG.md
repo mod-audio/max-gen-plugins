@@ -41,3 +41,7 @@ Contributor log for this repo (see `mod-publishing-ops/CLAUDE.md`, "Contributor 
 - Still local only (no push access). Next: push + PR, bump `MAX_GEN_ZWABO_VERSION` in
   mod-plugin-builder, then João's beta-or-not call and Gianfranco's OK to replace the live
   plugin. Not published.
+- 2026-10-16, Duo X + Duo test of 7bb44fe (all v1.14.0.3364): installs cleanly (the Duo upgraded from
+  the Store's 0.2.0; the copied `manifest.ttl` works), GUI renders as zwabo's screenshot, full control
+  sweep + worst case (random speed max, wet, trigger+loop held) with 0 new xruns. DSP cost: Duo
+  ~11% (worst ~13%), Duo X within noise. Neither device has a saved board using MIRRORZ.
