@@ -12,19 +12,23 @@
         modgui:brand "Zwabo" ;
         modgui:label "MIRRORZz" ;
         modgui:model "boxy" ;
-        modgui:panel "3-knobs" ;
+        modgui:panel "1-select-3-knobs" ;
         modgui:color "white" ;
         modgui:knob "purple" ;
         modgui:port [
-            lv2:index 0 ;
+	    lv2:index 0 ;
+            lv2:symbol "ENV" ;
+            lv2:name "ENV" ;
+	] , [
+            lv2:index 1 ;
             lv2:symbol "dry_wet" ;
             lv2:name "dry_wet" ;
         ] , [
-            lv2:index 1 ;
-            lv2:symbol "filter" ;
-            lv2:name "filter" ;
-        ] , [
             lv2:index 2 ;
+            lv2:symbol "speed" ;
+            lv2:name "speed" ;
+        ] , [
+            lv2:index 3 ;
             lv2:symbol "RandSpeed" ;
             lv2:name "RandSpeed" ;
         ] ;

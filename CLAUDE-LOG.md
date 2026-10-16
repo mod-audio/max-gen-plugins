@@ -25,3 +25,19 @@ Contributor log for this repo (see `mod-publishing-ops/CLAUDE.md`, "Contributor 
   layout). João is asking zwabo for new files (knob placement, other controls, updated
   screenshot/thumbnail). The builder recipe (`MAX_GEN_ZWABO_VERSION`) isn't bumped yet, since that
   needs this branch pushed and merged upstream. Not published.
+
+## 2026-10-16 — João (joao@mod.audio), MacBook — MIRRORZz GUI: zwabo's fixed modgui, hold lifted
+
+- zwabo sent an updated `modgui.ttl` and screenshot (his HTML and CSS are unchanged). The new
+  `modgui.ttl` lists 4 ports (ENV, dry_wet, speed, RandSpeed), matching his 1-select + 3-knobs
+  template, which fixes the missing DRY_WET.
+- Reverted the 2026-10-14 3-knob workaround: zwabo's original `icon-mirrorzz.html` again, his
+  `modgui.ttl` (`modgui:panel "1-select-3-knobs"`) with only the URI kept as
+  `urn:maxgen:zwabo:mirrorz` and the `modgui:documentation` line for `MIRRORZz.pdf`, and his new
+  screenshot (DRY_WET · SPEED · RANDSPEED). FILTER is no longer a GUI knob but is still a port.
+- Rebuilt for Dwarf, Duo X and Duo (the Duo reuses the Dwarf's `manifest.ttl`, because ttl
+  generation can't run for armhf). Installed on João's Dwarf via `/sdk/install`. João checked the
+  GUI: correct.
+- Still local only (no push access). Next: push + PR, bump `MAX_GEN_ZWABO_VERSION` in
+  mod-plugin-builder, then João's beta-or-not call and Gianfranco's OK to replace the live
+  plugin. Not published.
