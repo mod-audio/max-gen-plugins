@@ -1,0 +1,45 @@
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<urn:maxgen:zwabo:mirrorz>
+    a lv2:Plugin ;
+    lv2:binary <zwabo-mirrorz_dsp.so> ;
+    rdfs:seeAlso <zwabo-mirrorz_dsp.ttl> ,
+                 <modgui.ttl> .
+
+<urn:maxgen:zwabo:mirrorz#preset001>
+    a pset:Preset ;
+    lv2:appliesTo <urn:maxgen:zwabo:mirrorz> ;
+    rdfs:label "Speed x1" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<urn:maxgen:zwabo:mirrorz#preset002>
+    a pset:Preset ;
+    lv2:appliesTo <urn:maxgen:zwabo:mirrorz> ;
+    rdfs:label "Speed x0.5" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<urn:maxgen:zwabo:mirrorz#preset003>
+    a pset:Preset ;
+    lv2:appliesTo <urn:maxgen:zwabo:mirrorz> ;
+    rdfs:label "Speed x2" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<urn:maxgen:zwabo:mirrorz#preset004>
+    a pset:Preset ;
+    lv2:appliesTo <urn:maxgen:zwabo:mirrorz> ;
+    rdfs:label "Speed random" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<urn:maxgen:zwabo:mirrorz#preset005>
+    a pset:Preset ;
+    lv2:appliesTo <urn:maxgen:zwabo:mirrorz> ;
+    rdfs:label "Subtle and close" ;
+    rdfs:seeAlso <presets.ttl> .
+
+<urn:maxgen:zwabo:mirrorz#preset006>
+    a pset:Preset ;
+    lv2:appliesTo <urn:maxgen:zwabo:mirrorz> ;
+    rdfs:label "Filtered shadow" ;
+    rdfs:seeAlso <presets.ttl> .

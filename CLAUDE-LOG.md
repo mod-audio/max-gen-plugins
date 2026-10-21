@@ -48,3 +48,19 @@ Contributor log for this repo (see `mod-publishing-ops/CLAUDE.md`, "Contributor 
 - 2026-10-16, Duo X re-test with USB audio mode off (it had been using most of the DSP): empty board
   ~7.1%, with MIRRORZz ~8.9% (worst case 9.0%), so MIRRORZz costs ~2% on the Duo X. Control sweep +
   worst case: 0 xruns. GUI correct.
+
+## 2026-10-21 — João (joao@mod.audio), MacBook — MIRRORZz factory presets from zwabo
+
+- zwabo shared 6 presets (Speed x1, Speed x0.5, Speed x2, Speed random, Subtle and close,
+  Filtered shadow). He saved them from his own build (`urn:maxgen:MIRRORZz`), so they now point at
+  `urn:maxgen:zwabo:mirrorz#preset001`–`006`. Values unchanged.
+- New `custom-ttl/zwabo-mirrorz/presets.ttl`, plus a `manifest.ttl` that lists them: DPF only
+  writes presets for plugins with programs, and the Makefile copies `custom-ttl/*.ttl` over the
+  generated files. This also replaces the Duo's copied-manifest workaround.
+- Factory presets, as João asked: they ship in the bundle, so mod-ui lists them under Factory
+  (empty `path`), not User.
+- Dwarf (v1.14.0.3364): all 6 under Factory in the web UI, each loads with the expected values,
+  DSP ~19–20% on the board, no new xruns. João listened: sounds good. Duo X and Duo not re-tested
+  (same TTL files; João's call). With the PDF manual, MIRRORZz now meets the main-store rule
+  (docs + presets).
+- Still local only (no push access). Not published.
