@@ -1,0 +1,212 @@
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix pset:  <http://lv2plug.in/ns/ext/presets#> .
+
+<urn:maxgen:zwabo:mirrorz#preset001>
+    lv2:port
+    [
+        lv2:symbol "ENV" ;
+        pset:value 99.0 ;
+    ] ,
+    [
+        lv2:symbol "RandSpdOn" ;
+        pset:value 0.0 ;
+    ] ,
+    [
+        lv2:symbol "RandSpeed" ;
+        pset:value 0.699999988079 ;
+    ] ,
+    [
+        lv2:symbol "dry_wet" ;
+        pset:value 0.5 ;
+    ] ,
+    [
+        lv2:symbol "filter" ;
+        pset:value 0.0 ;
+    ] ,
+    [
+        lv2:symbol "loop" ;
+        pset:value 0.0 ;
+    ] ,
+    [
+        lv2:symbol "speed" ;
+        pset:value 1.0 ;
+    ] ,
+    [
+        lv2:symbol "trigger" ;
+        pset:value 0.0 ;
+    ] .
+
+<urn:maxgen:zwabo:mirrorz#preset002>
+    lv2:port
+    [
+        lv2:symbol "ENV" ;
+        pset:value 99.0 ;
+    ] ,
+    [
+        lv2:symbol "RandSpdOn" ;
+        pset:value 0.0 ;
+    ] ,
+    [
+        lv2:symbol "RandSpeed" ;
+        pset:value 0.699999988079 ;
+    ] ,
+    [
+        lv2:symbol "dry_wet" ;
+        pset:value 0.5 ;
+    ] ,
+    [
+        lv2:symbol "filter" ;
+        pset:value 0.0 ;
+    ] ,
+    [
+        lv2:symbol "loop" ;
+        pset:value 0.0 ;
+    ] ,
+    [
+        lv2:symbol "speed" ;
+        pset:value 0.5 ;
+    ] ,
+    [
+        lv2:symbol "trigger" ;
+        pset:value 0.0 ;
+    ] .
+
+<urn:maxgen:zwabo:mirrorz#preset003>
+    lv2:port
+    [
+        lv2:symbol "ENV" ;
+        pset:value 99.0 ;
+    ] ,
+    [
+        lv2:symbol "RandSpdOn" ;
+        pset:value 0.0 ;
+    ] ,
+    [
+        lv2:symbol "RandSpeed" ;
+        pset:value 0.699999988079 ;
+    ] ,
+    [
+        lv2:symbol "dry_wet" ;
+        pset:value 0.5 ;
+    ] ,
+    [
+        lv2:symbol "filter" ;
+        pset:value 0.0 ;
+    ] ,
+    [
+        lv2:symbol "loop" ;
+        pset:value 0.0 ;
+    ] ,
+    [
+        lv2:symbol "speed" ;
+        pset:value 2.0 ;
+    ] ,
+    [
+        lv2:symbol "trigger" ;
+        pset:value 0.0 ;
+    ] .
+
+<urn:maxgen:zwabo:mirrorz#preset004>
+    lv2:port
+    [
+        lv2:symbol "ENV" ;
+        pset:value 99.0 ;
+    ] ,
+    [
+        lv2:symbol "RandSpdOn" ;
+        pset:value 1.0 ;
+    ] ,
+    [
+        lv2:symbol "RandSpeed" ;
+        pset:value 1.28308594 ;
+    ] ,
+    [
+        lv2:symbol "dry_wet" ;
+        pset:value 0.5 ;
+    ] ,
+    [
+        lv2:symbol "filter" ;
+        pset:value 0.0 ;
+    ] ,
+    [
+        lv2:symbol "loop" ;
+        pset:value 0.0 ;
+    ] ,
+    [
+        lv2:symbol "speed" ;
+        pset:value 2.0 ;
+    ] ,
+    [
+        lv2:symbol "trigger" ;
+        pset:value 0.0 ;
+    ] .
+
+<urn:maxgen:zwabo:mirrorz#preset005>
+    lv2:port
+    [
+        lv2:symbol "ENV" ;
+        pset:value 99.0 ;
+    ] ,
+    [
+        lv2:symbol "RandSpdOn" ;
+        pset:value 0.0 ;
+    ] ,
+    [
+        lv2:symbol "RandSpeed" ;
+        pset:value 0.699999988079 ;
+    ] ,
+    [
+        lv2:symbol "dry_wet" ;
+        pset:value 0.5 ;
+    ] ,
+    [
+        lv2:symbol "filter" ;
+        pset:value 87.05357361 ;
+    ] ,
+    [
+        lv2:symbol "loop" ;
+        pset:value 0.0 ;
+    ] ,
+    [
+        lv2:symbol "speed" ;
+        pset:value 1.0 ;
+    ] ,
+    [
+        lv2:symbol "trigger" ;
+        pset:value 0.0 ;
+    ] .
+
+<urn:maxgen:zwabo:mirrorz#preset006>
+    lv2:port
+    [
+        lv2:symbol "ENV" ;
+        pset:value 99.0 ;
+    ] ,
+    [
+        lv2:symbol "RandSpdOn" ;
+        pset:value 0.0 ;
+    ] ,
+    [
+        lv2:symbol "RandSpeed" ;
+        pset:value 0.699999988079 ;
+    ] ,
+    [
+        lv2:symbol "dry_wet" ;
+        pset:value 0.5 ;
+    ] ,
+    [
+        lv2:symbol "filter" ;
+        pset:value -89.6205368 ;
+    ] ,
+    [
+        lv2:symbol "loop" ;
+        pset:value 0.0 ;
+    ] ,
+    [
+        lv2:symbol "speed" ;
+        pset:value 1.0 ;
+    ] ,
+    [
+        lv2:symbol "trigger" ;
+        pset:value 0.0 ;
+    ] .

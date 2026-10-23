@@ -9,11 +9,11 @@
 .mod-pedal-boxy{{{cns}}} {
     background-position:center center;
     background-repeat:no-repeat;
-    background-size:230px 434px;
-    height:434px;
+    background-size:230px 431px;
+    height:431px;
     position:absolute;
     width:230px;
-    border-radius: 8px;
+    border-radius: 21px;
 }
 
 .mod-pedal-boxy{{{cns}}}.mod-boxy50 {
@@ -23,17 +23,17 @@
 }
 
 .mod-pedal-boxy{{{cns}}}.mod-boxy75 {
-    background-size:326px 434px;
+    background-size:326px 431px;
     width:326px;
 }
 
 .mod-pedal-boxy{{{cns}}}.mod-boxy85 {
-    background-size:364px 434px;
+    background-size:364px 431px;
     width:364px;
 }
 
 .mod-pedal-boxy{{{cns}}}.mod-boxy100 {
-    background-size:421px 434px;
+    background-size:421px 431px;
     width:421px;
 }
 
@@ -57,10 +57,14 @@
 }
 
 .mod-pedal-boxy{{{cns}}} .mod-plugin-brand h1 {
-  
+    border-color:#000;
+    border-radius:12px;
+    border-style:solid;
+    border-width:2px;
+    display:inline-block;
     font-family:"Nexa";
-    font-size:22px;
-    padding:3px 9px 0;
+    font-size:18px;
+    padding:1px 5px 0;
 }
 
 .mod-pedal-boxy{{{cns}}}.mod-five-knobs .mod-plugin-brand,
@@ -94,11 +98,12 @@
      border-color:#000;
     border-radius:12px;
     border-style:solid;
-    border-width:6px;
+    border-width:0px;
     display:inline-block;
    font-family:"Questrial";
-    font-size:31px;
+    font-size:35px;
     line-height:1;
+    padding:3px 3px 0;
 }
 
 .mod-pedal-boxy{{{cns}}}.mod-five-knobs .mod-plugin-name,
@@ -307,10 +312,10 @@
 .mod-pedal-boxy{{{cns}}} .mod-enumerated {
     background-position:right center;
     background-repeat:no-repeat;
-    font-size:11px;
+    font-size:0px;
     font-weight:bold;
     left:0;
-    line-height:2;
+    line-height:0;
     overflow:hidden;
     position:absolute;
     right:0;
@@ -321,7 +326,7 @@
     background-color:rgba(0,0,0,.3);
     box-shadow:inset 0 0 4px rgba(0,0,0,.3);
     border-radius:4px;
-    padding:3px 9px;
+    padding:0px 9px;
 }
 
 .mod-pedal-boxy{{{cns}}} .mod-enumerated .mod-enumerated-selected {
