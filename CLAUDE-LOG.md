@@ -64,3 +64,16 @@ Contributor log for this repo (see `mod-publishing-ops/CLAUDE.md`, "Contributor 
   (same TTL files; João's call). With the PDF manual, MIRRORZz now meets the main-store rule
   (docs + presets).
 - Still local only (no push access). Not published.
+
+## 2026-10-27 — João (joao@mod.audio), MacBook (Apple Silicon) — MIRRORZz port groups
+
+- Branch `joao/zwabo-mirrorz-port-groups` (`cfc4bd8`): control port groups in
+  `custom-ttl/zwabo-mirrorz/zwabo-mirrorz_dsp.ttl`, for the main-store port-groups rule (2026-10-26). Grouping chosen
+  by João from the manual's parameter descriptions: **Reverse** (TRIGGER, LOOP, ENV), **Speed** (SPEED, RANDSPDON,
+  RANDSPEED; symbol `speed_group` so it differs from the `speed` port), **Tone & Mix** (FILTER, DRY_WET). Read-only
+  outputs BILL, BOUL, urn left ungrouped. Same form as builder PR #212 (`pg:InputGroup`, `lv2:index`). TTL only.
+- Built for moddwarf-new (only the Dwarf was connected); the bundle's TTL is identical to the commit.
+- Dwarf (v1.14.0.3366): mod-ui reads the 3 groups as valid and assigns all 8 controls; 6 factory presets load;
+  DSP ~19–20% on the board, bypass ×4, 0 xruns. Settings panel not checked by eye yet. Duo X and Duo not re-tested
+  (same TTL on every platform).
+- Not merged, not published. After the merge, the builder pin moves again (from `f005a97`).

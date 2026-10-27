@@ -83,6 +83,7 @@
         lv2:index 6 ;
         lv2:name "ENV" ;
         lv2:symbol "ENV" ;
+        pg:group <urn:maxgen:zwabo:mirrorz#group_reverse> ;
         lv2:default 99 ;
         lv2:minimum 0 ;
         lv2:maximum 2900 ;
@@ -92,6 +93,7 @@
         lv2:index 7 ;
         lv2:name "RandSpdOn" ;
         lv2:symbol "RandSpdOn" ;
+        pg:group <urn:maxgen:zwabo:mirrorz#group_speed> ;
         lv2:default 0 ;
         lv2:minimum 0 ;
         lv2:maximum 1 ;
@@ -102,6 +104,7 @@
         lv2:index 8 ;
         lv2:name "RandSpeed" ;
         lv2:symbol "RandSpeed" ;
+        pg:group <urn:maxgen:zwabo:mirrorz#group_speed> ;
         lv2:default 0.699999988079 ;
         lv2:minimum 0.00999999977648 ;
         lv2:maximum 3 ;
@@ -111,6 +114,7 @@
         lv2:index 9 ;
         lv2:name "dry_wet" ;
         lv2:symbol "dry_wet" ;
+        pg:group <urn:maxgen:zwabo:mirrorz#group_tone_mix> ;
         lv2:default 0.5 ;
         lv2:minimum 0 ;
         lv2:maximum 1 ;
@@ -120,6 +124,7 @@
         lv2:index 10 ;
         lv2:name "filter" ;
         lv2:symbol "filter" ;
+        pg:group <urn:maxgen:zwabo:mirrorz#group_tone_mix> ;
         lv2:default 0 ;
         lv2:minimum -100 ;
         lv2:maximum 100 ;
@@ -129,6 +134,7 @@
         lv2:index 11 ;
         lv2:name "loop" ;
         lv2:symbol "loop" ;
+        pg:group <urn:maxgen:zwabo:mirrorz#group_reverse> ;
         lv2:default 0 ;
         lv2:minimum 0 ;
         lv2:maximum 1 ;
@@ -139,6 +145,7 @@
         lv2:index 12 ;
         lv2:name "speed" ;
         lv2:symbol "speed" ;
+        pg:group <urn:maxgen:zwabo:mirrorz#group_speed> ;
         lv2:default 1 ;
         lv2:minimum 0.5 ;
         lv2:maximum 2 ;
@@ -152,6 +159,7 @@
         lv2:index 13 ;
         lv2:name "trigger" ;
         lv2:symbol "trigger" ;
+        pg:group <urn:maxgen:zwabo:mirrorz#group_reverse> ;
         lv2:default 0 ;
         lv2:minimum 0 ;
         lv2:maximum 1 ;
@@ -196,3 +204,22 @@ Pressing TRIGGER stop the loop (if you keep TRIGGER pressed, it reads audio back
     a pg:Group , pg:StereoGroup ;
     lv2:name "Stereo" ;
     lv2:symbol "dpf_stereo" .
+
+# Port groups (MOD OS 1.14 settings panel), added 2026-10
+<urn:maxgen:zwabo:mirrorz#group_reverse>
+    a pg:InputGroup ;
+    lv2:symbol "reverse" ;
+    lv2:name "Reverse" ;
+    lv2:index 0 .
+
+<urn:maxgen:zwabo:mirrorz#group_speed>
+    a pg:InputGroup ;
+    lv2:symbol "speed_group" ;
+    lv2:name "Speed" ;
+    lv2:index 1 .
+
+<urn:maxgen:zwabo:mirrorz#group_tone_mix>
+    a pg:InputGroup ;
+    lv2:symbol "tone_mix" ;
+    lv2:name "Tone & Mix" ;
+    lv2:index 2 .
